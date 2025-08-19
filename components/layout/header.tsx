@@ -53,9 +53,9 @@ export function Header() {
   }
 
   return (
-    <header id="navbar" className="fixed top-0 left-0 right-0 z-50 bg-slate-800 shadow-md">
+    <header id="navbar" className="fixed top-0 left-0 right-0 z-50 bg-dark-blue shadow-md">
       <div className="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
-        <Link href="/" className="text-xl sm:text-2xl font-bold text-white hover:text-blue-300 transition">
+        <Link href="/" className="text-xl sm:text-2xl font-bold text-white hover:text-turquoise transition">
           iSMIT 2026
         </Link>
 
@@ -67,14 +67,14 @@ export function Header() {
               href={getNavLink(item)}
               onClick={(e) => handleNavClick(e, item)}
               className={`text-sm xl:text-base transition ${
-                isActiveLink(item) ? "text-blue-300 font-bold" : "text-white hover:text-blue-300"
+                isActiveLink(item) ? "text-turquoise font-bold" : "text-white hover:text-turquoise"
               }`}
             >
               {item.name}
             </Link>
           ))}
           <Link href="/registration">
-            <Button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-3 xl:px-4 text-sm xl:text-base rounded-lg transition shadow-md">
+            <Button className="bg-magenta hover:bg-magenta/90 text-white font-bold py-2 px-3 xl:px-4 text-sm xl:text-base rounded-lg transition shadow-md">
               Register Now
             </Button>
           </Link>
@@ -92,7 +92,7 @@ export function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-slate-800/98 backdrop-blur-sm border-t border-slate-700">
+        <div className="lg:hidden bg-dark-blue/98 backdrop-blur-sm border-t border-slate-700">
           <div className="px-4 py-2 space-y-1">
             {navigationItems.map((item) => (
               <Link
@@ -100,7 +100,7 @@ export function Header() {
                 href={getNavLink(item)}
                 onClick={(e) => handleNavClick(e, item)}
                 className={`block text-left py-3 px-4 rounded-lg transition text-base ${
-                  isActiveLink(item) ? "text-blue-300 bg-slate-700" : "text-white hover:bg-slate-700"
+                  isActiveLink(item) ? "text-turquoise bg-slate-700" : "text-white hover:bg-slate-700"
                 }`}
               >
                 {item.name}
@@ -109,7 +109,7 @@ export function Header() {
             <Link
               href="/registration"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block bg-blue-500 text-white text-center py-3 px-4 mt-3 rounded-lg hover:bg-blue-600 transition font-bold"
+              className="block bg-magenta text-white text-center py-3 px-4 mt-3 rounded-lg hover:bg-magenta/90 transition font-bold"
             >
               Register Now
             </Link>

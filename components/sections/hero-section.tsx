@@ -4,27 +4,13 @@ import { Button } from "@/components/ui/button"
 export function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Desktop Video Background - Hidden on mobile */}
-      <div className="absolute inset-0 w-full h-full hidden md:block">
-        <iframe
-          src="https://player.vimeo.com/video/1109133756?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0"
-          className="absolute top-1/2 left-1/2 w-screen h-screen min-w-full min-h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
-          frameBorder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
+      <div className="absolute inset-0 w-full h-full">
+        <img
+          src="https://raw.githubusercontent.com/dryanez/ismit/main/684fc342951a437d2dccd725_home2.jpg"
+          alt="iSMIT 2026 Medical Technology Background"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-slate-900/70" />
-      </div>
-
-      {/* Mobile Background - Gradient with medical pattern */}
-      <div className="absolute inset-0 w-full h-full md:hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-32 h-32 border border-white/20 rounded-full"></div>
-          <div className="absolute top-32 right-16 w-24 h-24 border border-blue-300/20 rounded-full"></div>
-          <div className="absolute bottom-32 left-16 w-40 h-40 border border-white/10 rounded-full"></div>
-          <div className="absolute bottom-16 right-12 w-28 h-28 border border-blue-200/15 rounded-full"></div>
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
       </div>
 
       {/* Hero Content - Optimized for both mobile and desktop */}
@@ -39,16 +25,16 @@ export function HeroSection() {
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mt-4 md:mt-6 max-w-5xl mx-auto mb-8 md:mb-10 px-2 leading-relaxed">
           <span className="block sm:inline">Disruptive AGE in Surgical Innovation:</span>
           <span className="block sm:inline mt-2 sm:mt-0 sm:ml-2">
-            <span className="text-blue-300">Artificial Intelligence</span> ·
-            <span className="text-green-300 ml-2">New-Generation Materials</span> ·
-            <span className="text-purple-300 ml-2">Emerging Robotics</span>
+            <span className="text-[#1DA9C9]">Artificial Intelligence</span> ·
+            <span className="text-[#F9C600] ml-2">New-Generation Materials</span> ·
+            <span className="text-[#E43C7A] ml-2">Emerging Robotics</span>
           </span>
         </p>
 
         {/* Date and location with mobile-optimized layout */}
         <div className="mt-6 md:mt-8 mb-8 md:mb-10">
-          <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg px-6 py-4 md:px-8 md:py-6 border border-white/20">
-            <p className="text-xl md:text-2xl lg:text-3xl font-bold text-blue-300 mb-2">19 – 21 November 2026</p>
+          <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg px-6 py-4 md:px-8 md:py-6 border border-[#1DA9C9]/30">
+            <p className="text-xl md:text-2xl lg:text-3xl font-bold text-[#1DA9C9] mb-2">19 – 21 November 2026</p>
             <p className="text-base md:text-lg lg:text-xl text-gray-300">Nürnberg, Germany</p>
           </div>
         </div>
@@ -58,7 +44,7 @@ export function HeroSection() {
           <Link href="/registration">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold py-4 px-8 md:py-5 md:px-10 text-lg md:text-xl shadow-2xl uppercase w-full sm:w-auto min-w-[200px] transform hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-[#E43C7A] to-[#E43C7A]/80 hover:from-[#E43C7A]/90 hover:to-[#E43C7A] text-white font-bold py-4 px-8 md:py-5 md:px-10 text-lg md:text-xl shadow-2xl uppercase w-full sm:w-auto min-w-[200px] transform hover:scale-105 transition-all duration-300"
             >
               Register Now
             </Button>
@@ -69,7 +55,7 @@ export function HeroSection() {
             <Button
               variant="outline"
               size="lg"
-              className="border-white/30 text-white hover:bg-white/10 py-4 px-8 text-lg w-full sm:w-auto min-w-[200px] backdrop-blur-sm bg-transparent"
+              className="border-[#1DA9C9]/50 text-[#1DA9C9] hover:bg-[#1DA9C9]/10 py-4 px-8 text-lg w-full sm:w-auto min-w-[200px] backdrop-blur-sm bg-transparent"
             >
               Learn More
             </Button>

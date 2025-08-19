@@ -14,14 +14,14 @@ export function AbstractsSection() {
       title: "Oral Spotlights",
       duration: "7 minutes",
       description: "Present your research findings in a focused oral presentation",
-      color: "bg-blue-500",
+      color: "bg-[#1DA9C9]",
     },
     {
       icon: <Video className="w-8 h-8" />,
       title: "Video Posters",
       duration: "120 seconds",
       description: "Create an engaging video poster to showcase your work",
-      color: "bg-green-500",
+      color: "bg-[#F28C28]",
     },
   ]
 
@@ -32,12 +32,12 @@ export function AbstractsSection() {
   ]
 
   return (
-    <section id="abstracts" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="abstracts" className="py-20 bg-gradient-to-br from-gray-50 to-[#1DA9C9]/10">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="section-subtitle">Share Your Innovation</h2>
-          <h3 className="section-title">Call for Abstracts</h3>
-          <p className="max-w-3xl mx-auto mt-4 text-slate-600 text-lg">
+          <h2 className="section-subtitle text-[#1DA9C9]">Share Your Innovation</h2>
+          <h3 className="section-title text-[#333333]">Call for Abstracts</h3>
+          <p className="max-w-3xl mx-auto mt-4 text-[#A9A9A9] text-lg">
             Join the global conversation in medical technology. Submit your research for oral spotlights or video
             posters and connect with leading innovators worldwide.
           </p>
@@ -48,7 +48,7 @@ export function AbstractsSection() {
             <div
               key={index}
               className={`relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer ${
-                hoveredCard === index ? "ring-4 ring-blue-200" : ""
+                hoveredCard === index ? "ring-4 ring-[#1DA9C9]/30" : ""
               }`}
               onMouseEnter={() => setHoveredCard(index)}
               onMouseLeave={() => setHoveredCard(null)}
@@ -60,27 +60,27 @@ export function AbstractsSection() {
                 >
                   {type.icon}
                 </div>
-                <h4 className="text-2xl font-bold text-slate-800 mb-2">{type.title}</h4>
+                <h4 className="text-2xl font-bold text-[#333333] mb-2">{type.title}</h4>
                 <div className="flex items-center gap-2 mb-4">
-                  <Clock className="w-4 h-4 text-slate-500" />
-                  <span className="text-slate-600 font-medium">{type.duration}</span>
+                  <Clock className="w-4 h-4 text-[#A9A9A9]" />
+                  <span className="text-[#A9A9A9] font-medium">{type.duration}</span>
                 </div>
-                <p className="text-slate-600 leading-relaxed">{type.description}</p>
+                <p className="text-[#A9A9A9] leading-relaxed">{type.description}</p>
               </div>
             </div>
           ))}
         </div>
 
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-12">
-          <h4 className="text-2xl font-bold text-slate-800 mb-8 text-center">Important Dates</h4>
+          <h4 className="text-2xl font-bold text-[#333333] mb-8 text-center">Important Dates</h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {keyDates.map((item, index) => (
               <div key={index} className="text-center group">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 mb-4 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#1DA9C9]/10 text-[#1DA9C9] mb-4 group-hover:bg-[#1DA9C9] group-hover:text-white transition-colors duration-300">
                   {item.icon}
                 </div>
-                <div className="font-bold text-lg text-slate-800 mb-2">{item.date}</div>
-                <div className="text-slate-600">{item.event}</div>
+                <div className="font-bold text-lg text-[#333333] mb-2">{item.date}</div>
+                <div className="text-[#A9A9A9]">{item.event}</div>
               </div>
             ))}
           </div>
@@ -91,7 +91,7 @@ export function AbstractsSection() {
             <Link href="/abstracts">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                className="bg-gradient-to-r from-[#E43C7A] to-[#d1356b] hover:from-[#d1356b] hover:to-[#c02e5f] text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
                 Submit Your Abstract
               </Button>
@@ -99,7 +99,7 @@ export function AbstractsSection() {
             <Button
               variant="outline"
               size="lg"
-              className="border-2 border-blue-500 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 bg-transparent"
+              className="border-2 border-[#1DA9C9] text-[#1DA9C9] hover:bg-[#1DA9C9]/10 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 bg-transparent"
             >
               View Guidelines
             </Button>

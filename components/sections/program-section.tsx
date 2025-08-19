@@ -131,10 +131,10 @@ export function ProgramSection() {
   }
 
   return (
-    <section id="program" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50 relative overflow-hidden">
+    <section id="program" className="py-20 bg-gradient-to-br from-[#1DA9C9]/5 to-[#E43C7A]/5 relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-      <div className="absolute top-10 right-20 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
-      <div className="absolute bottom-10 left-20 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
+      <div className="absolute top-10 right-20 w-72 h-72 bg-[#E43C7A]/20 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
+      <div className="absolute bottom-10 left-20 w-72 h-72 bg-[#1DA9C9]/20 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-12">
@@ -146,8 +146,8 @@ export function ProgramSection() {
           <button
             className={`px-4 md:px-8 py-2 md:py-4 text-sm md:text-base font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl ${
               activeTab === "day1"
-                ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-blue-200"
-                : "bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 hover:border-blue-200"
+                ? "bg-gradient-to-r from-[#E43C7A] to-[#E43C7A]/80 text-white shadow-[#E43C7A]/20"
+                : "bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 hover:border-[#1DA9C9]/30"
             }`}
             onClick={() => setActiveTab("day1")}
           >
@@ -157,8 +157,8 @@ export function ProgramSection() {
           <button
             className={`px-4 md:px-8 py-2 md:py-4 text-sm md:text-base font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl ${
               activeTab === "day2"
-                ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-blue-200"
-                : "bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 hover:border-blue-200"
+                ? "bg-gradient-to-r from-[#E43C7A] to-[#E43C7A]/80 text-white shadow-[#E43C7A]/20"
+                : "bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 hover:border-[#1DA9C9]/30"
             }`}
             onClick={() => setActiveTab("day2")}
           >
@@ -168,8 +168,8 @@ export function ProgramSection() {
           <button
             className={`px-4 md:px-8 py-2 md:py-4 text-sm md:text-base font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl ${
               activeTab === "day3"
-                ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-blue-200"
-                : "bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 hover:border-blue-200"
+                ? "bg-gradient-to-r from-[#E43C7A] to-[#E43C7A]/80 text-white shadow-[#E43C7A]/20"
+                : "bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 hover:border-[#1DA9C9]/30"
             }`}
             onClick={() => setActiveTab("day3")}
           >
@@ -179,7 +179,7 @@ export function ProgramSection() {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl p-4 md:p-8 border border-slate-100 hover:shadow-2xl transition-all duration-500">
+          <div className="bg-white rounded-2xl shadow-xl p-4 md:p-8 border border-[#1DA9C9]/20 hover:shadow-2xl transition-all duration-500">
             <h4 className="text-lg md:text-2xl font-bold mb-4 md:mb-8 text-slate-800 text-center">
               {activeTab === "day1" && (
                 <>
@@ -204,7 +204,7 @@ export function ProgramSection() {
               {tabContent[activeTab as keyof typeof tabContent].map((item, index) => (
                 <div
                   key={index}
-                  className="group p-3 md:p-6 rounded-xl bg-gradient-to-r from-slate-50 to-blue-50 hover:from-blue-50 hover:to-purple-50 transition-all duration-300 border border-slate-100 hover:border-blue-200 hover:shadow-lg transform hover:-translate-y-1"
+                  className="group p-3 md:p-6 rounded-xl bg-gradient-to-r from-slate-50 to-[#1DA9C9]/5 hover:from-[#1DA9C9]/10 hover:to-[#E43C7A]/10 transition-all duration-300 border border-slate-100 hover:border-[#1DA9C9]/30 hover:shadow-lg transform hover:-translate-y-1"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="flex items-start gap-2 md:gap-4">
@@ -213,11 +213,11 @@ export function ProgramSection() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 md:gap-3 mb-1 md:mb-2">
-                        <span className="px-2 md:px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs md:text-sm font-medium">
+                        <span className="px-2 md:px-3 py-1 bg-[#1DA9C9]/20 text-[#1DA9C9] rounded-full text-xs md:text-sm font-medium">
                           {item.time}
                         </span>
                       </div>
-                      <h5 className="text-sm md:text-lg font-bold text-slate-800 group-hover:text-blue-600 transition-colors duration-300 leading-tight">
+                      <h5 className="text-sm md:text-lg font-bold text-slate-800 group-hover:text-[#1DA9C9] transition-colors duration-300 leading-tight">
                         {item.title}
                       </h5>
                       {item.description && (
@@ -235,7 +235,7 @@ export function ProgramSection() {
 
         <div className="text-center mt-12">
           <Link href="/program">
-            <Button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-3 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl rounded-full">
+            <Button className="bg-gradient-to-r from-[#E43C7A] to-[#E43C7A]/80 hover:from-[#E43C7A]/90 hover:to-[#E43C7A] text-white px-8 py-3 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl rounded-full">
               View Full Program
             </Button>
           </Link>

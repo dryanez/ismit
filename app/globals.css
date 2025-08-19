@@ -75,7 +75,23 @@
 @theme inline {
   --font-sans: var(--font-inter);
 
-  /* Updated color scheme to match iSMIT design */
+  /* Updated to use new brand color palette */
+  /* Primary Brand Colors */
+  --color-turquoise: #1da9c9;
+  --color-magenta: #e43c7a;
+  --color-yellow: #f9c600;
+
+  /* Secondary Colors */
+  --color-dark-blue: #2c5d87;
+  --color-orange: #f28c28;
+  --color-light-grey: #a9a9a9;
+
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-dark-grey: #333333;
+
+  /* Legacy slate colors updated to match new palette */
   --color-slate-50: #f8fafc;
   --color-slate-100: #f1f5f9;
   --color-slate-200: #e2e8f0;
@@ -87,20 +103,21 @@
   --color-slate-800: #1e293b;
   --color-slate-900: #0f172a;
 
+  /* Updated blue colors to match dark blue brand color */
   --color-blue-50: #eff6ff;
   --color-blue-100: #dbeafe;
   --color-blue-200: #bfdbfe;
   --color-blue-300: #93c5fd;
   --color-blue-400: #60a5fa;
-  --color-blue-500: #3b82f6;
+  --color-blue-500: #2c5d87;
   --color-blue-600: #2563eb;
   --color-blue-700: #1d4ed8;
   --color-blue-800: #1e40af;
   --color-blue-900: #1e3a8a;
 
-  /* iSMIT brand colors */
-  --color-ismit-primary: #005a9c;
-  --color-ismit-dark: #00172c;
+  /* Updated iSMIT brand colors to new palette */
+  --color-ismit-primary: #1da9c9;
+  --color-ismit-dark: #2c5d87;
   --color-ismit-light: #f8fafc;
 
   --color-background: var(--background);
@@ -148,7 +165,7 @@
   body {
     font-family: "Inter", sans-serif;
     background-color: #f8fafc;
-    color: #334155;
+    color: #333333; /* Updated to use dark grey from brand palette */
     @apply bg-background text-foreground;
   }
 
@@ -157,17 +174,17 @@
     font-size: 2.25rem;
     line-height: 2.5rem;
     letter-spacing: -0.025em;
-    color: #1e293b;
+    color: #2c5d87; /* Updated to use dark blue brand color */
   }
 
   .section-subtitle {
     font-size: 1.25rem;
     font-weight: 500;
-    color: #005a9c;
+    color: #1da9c9; /* Updated to use turquoise brand color */
   }
 
   .page-header {
-    background-color: #00172c;
+    background-color: #2c5d87; /* Updated to use dark blue brand color */
   }
 
   .card {
@@ -175,6 +192,45 @@
     border-radius: 0.75rem;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     @apply bg-card rounded-lg shadow;
+  }
+
+  /* Added brand color utility classes */
+  .bg-turquoise {
+    background-color: #1da9c9;
+  }
+  .bg-magenta {
+    background-color: #e43c7a;
+  }
+  .bg-yellow {
+    background-color: #f9c600;
+  }
+  .bg-dark-blue {
+    background-color: #2c5d87;
+  }
+  .bg-orange {
+    background-color: #f28c28;
+  }
+  .bg-light-grey {
+    background-color: #a9a9a9;
+  }
+
+  .text-turquoise {
+    color: #1da9c9;
+  }
+  .text-magenta {
+    color: #e43c7a;
+  }
+  .text-yellow {
+    color: #f9c600;
+  }
+  .text-dark-blue {
+    color: #2c5d87;
+  }
+  .text-orange {
+    color: #f28c28;
+  }
+  .text-light-grey {
+    color: #a9a9a9;
   }
 
   /* Mobile-specific optimizations for better iPhone experience */

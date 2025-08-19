@@ -64,10 +64,13 @@ export function SpeakersSection() {
   ]
 
   return (
-    <section id="speakers" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50 relative overflow-hidden">
+    <section
+      id="speakers"
+      className="py-20 bg-gradient-to-br from-[#2C5D87]/5 to-[#1DA9C9]/10 relative overflow-hidden"
+    >
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-      <div className="absolute top-10 right-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
-      <div className="absolute bottom-10 left-10 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
+      <div className="absolute top-10 right-10 w-72 h-72 bg-[#1DA9C9]/20 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
+      <div className="absolute bottom-10 left-10 w-72 h-72 bg-[#E43C7A]/20 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
@@ -82,7 +85,7 @@ export function SpeakersSection() {
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-8 mb-12">
           {speakers.map((speaker, index) => (
             <div key={index} className="group animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
-              <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-100 hover:border-blue-200 transform hover:-translate-y-2">
+              <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-100 hover:border-[#1DA9C9]/30 transform hover:-translate-y-2">
                 <div className="aspect-square relative overflow-hidden">
                   <Image
                     src={speaker.image || "/placeholder.svg"}
@@ -93,10 +96,10 @@ export function SpeakersSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-3 md:p-6 text-center">
-                  <h4 className="font-bold text-slate-800 text-xs md:text-lg mb-1 group-hover:text-blue-600 transition-colors duration-300 leading-tight">
+                  <h4 className="font-bold text-slate-800 text-xs md:text-lg mb-1 group-hover:text-[#1DA9C9] transition-colors duration-300 leading-tight">
                     {speaker.name}
                   </h4>
-                  <p className="text-xs md:text-sm text-blue-600 font-medium mb-1 md:mb-2">{speaker.country}</p>
+                  <p className="text-xs md:text-sm text-[#1DA9C9] font-medium mb-1 md:mb-2">{speaker.country}</p>
                   <p className="text-xs md:text-sm text-slate-600 leading-relaxed hidden sm:block">
                     {speaker.affiliation}
                   </p>
@@ -108,7 +111,7 @@ export function SpeakersSection() {
 
         <div className="text-center">
           <Link href="/speakers">
-            <Button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-3 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl rounded-full">
+            <Button className="bg-gradient-to-r from-[#E43C7A] to-[#E43C7A]/80 hover:from-[#E43C7A]/90 hover:to-[#E43C7A] text-white px-8 py-3 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl rounded-full">
               View All Speakers
             </Button>
           </Link>

@@ -7,7 +7,7 @@ export function StartupsSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-sm md:text-base font-semibold text-[#1DA9C9] mb-2">The Future is Now</h2>
-          <h3 className="text-2xl md:text-4xl font-bold text-[#333333]">iSMIT 2026 Start-up Grand Prize</h3>
+          <h3 className="text-2xl md:text-4xl font-bold text-[#333333] bg-[rgba(249,198,0,1)] border-0 rounded-2xl shadow-xl">iSMIT 2026 Start-up Grand Prize</h3>
         </div>
         <div className="card max-w-4xl mx-auto p-6 md:p-8 lg:p-12 text-center">
           <h4 className="text-2xl md:text-3xl font-bold text-[#333333] mb-4">Pitch · Win · Scale</h4>

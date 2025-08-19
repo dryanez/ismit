@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export function RegistrationSection() {
   return (
-    <section id="registration" className="py-20 bg-blue-800 text-white">
+    <section id="registration" className="py-20 text-white bg-[rgba(29,169,201,1)]">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold">Seats Are Limited. The Future Waits for No One.</h2>
         <p className="text-xl mt-4 max-w-3xl mx-auto text-blue-200">

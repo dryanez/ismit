@@ -7,7 +7,7 @@ export function SponsorsSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-sm md:text-base font-semibold text-[#1DA9C9] mb-2">Partners in Innovation</h2>
-          <h3 className="text-2xl md:text-4xl font-bold text-[#333333]">Sponsorship Opportunities</h3>
+          <h3 className="text-2xl md:text-4xl font-bold text-[#333333] bg-[rgba(249,198,0,1)] rounded-2xl">Sponsorship Opportunities</h3>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mb-8 md:mb-12">
           <div className="card p-4 md:p-6 text-center border-t-4 md:border-t-8 border-[#F9C600] hover:shadow-lg transition-shadow">

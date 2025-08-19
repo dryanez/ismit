@@ -53,7 +53,7 @@ export function Header() {
   }
 
   return (
-    <header id="navbar" className="fixed top-0 left-0 right-0 z-50 bg-dark-blue shadow-md">
+    <header id="navbar" className="fixed top-0 left-0 right-0 z-50 shadow-md bg-[rgba(29,169,201,1)]">
       <div className="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
         <Link href="/" className="text-xl sm:text-2xl font-bold text-white hover:text-turquoise transition">
           iSMIT 2026

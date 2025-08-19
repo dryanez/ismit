@@ -139,7 +139,7 @@ export function ProgramSection() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-12">
           <h2 className="section-subtitle animate-fade-in">Scientific Program</h2>
-          <h3 className="section-title animate-fade-in-delay">A Glimpse into the Future</h3>
+          <h3 className="section-title animate-fade-in-delay bg-[rgba(249,198,0,1)] rounded-2xl">A Glimpse into the Future</h3>
         </div>
 
         <div className="flex justify-center mb-6 md:mb-8 flex-wrap gap-2 md:gap-4">
@@ -179,7 +179,7 @@ export function ProgramSection() {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl p-4 md:p-8 border border-[#1DA9C9]/20 hover:shadow-2xl transition-all duration-500">
+          <div className="rounded-2xl shadow-xl p-4 md:p-8 border border-[#1DA9C9]/20 hover:shadow-2xl transition-all duration-500">
             <h4 className="text-lg md:text-2xl font-bold mb-4 md:mb-8 text-slate-800 text-center">
               {activeTab === "day1" && (
                 <>

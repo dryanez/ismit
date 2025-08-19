@@ -36,7 +36,7 @@ export function AbstractsSection() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="section-subtitle text-[#1DA9C9]">Share Your Innovation</h2>
-          <h3 className="section-title text-[#333333]">Call for Abstracts</h3>
+          <h3 className="section-title text-[#333333] bg-[rgba(249,198,0,1)] rounded-2xl">Call for Abstracts</h3>
           <p className="max-w-3xl mx-auto mt-4 text-[#A9A9A9] text-lg">
             Join the global conversation in medical technology. Submit your research for oral spotlights or video
             posters and connect with leading innovators worldwide.

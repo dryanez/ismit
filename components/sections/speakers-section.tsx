@@ -75,7 +75,7 @@ export function SpeakersSection() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="section-subtitle animate-fade-in">Visionary Voices</h2>
-          <h3 className="section-title animate-fade-in-delay">Invited Keynote Speakers</h3>
+          <h3 className="section-title animate-fade-in-delay bg-[rgba(249,198,0,1)] mx-0 border-0 rounded-2xl">Invited Keynote Speakers</h3>
           <p className="max-w-2xl mx-auto mt-4 text-slate-600 animate-fade-in-delay-2">
             We are honored to host a lineup of world-renowned pioneers and thought leaders. (Final confirmations
             pending).

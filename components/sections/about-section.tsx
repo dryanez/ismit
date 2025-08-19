@@ -45,7 +45,7 @@ export function AboutSection() {
             Welcome to iSMIT 2026
           </h2>
           <h3
-            className={`text-2xl sm:text-3xl lg:text-4xl font-bold text-[#2C5D87] mb-4 sm:mb-6 transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+            className={`text-2xl sm:text-3xl lg:text-4xl font-bold text-[#2C5D87] mb-4 sm:mb-6 transition-all duration-1000 delay-200 bg-[rgba(249,198,0,1)] rounded-2xl opacity-[0.91] ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
             From Human Skill to Autonomous Systems
           </h3>

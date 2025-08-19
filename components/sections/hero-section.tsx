@@ -6,7 +6,7 @@ export function HeroSection() {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 w-full h-full">
         <img
-          src="https://raw.githubusercontent.com/dryanez/ismit/main/684fc342951a437d2dccd725_home2.jpg"
+          src="/hero-background.jpg"
           alt="iSMIT 2026 Medical Technology Background"
           className="absolute inset-0 w-full h-full object-cover"
         />

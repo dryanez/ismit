@@ -1,16 +1,20 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 w-full h-full">
-        <img
-          src="/hero-background.jpg"
-          alt="iSMIT 2026 Medical Technology Background"
-          className="absolute inset-0 w-full h-full object-cover"
+        <Image
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/684fc342951a437d2dccd725_home2.jpg-0cefoIL8tDRF5EsWxwM2ElPLJZ56Gp.jpeg"
+          alt="Medical professionals in artistic style"
+          fill
+          className="object-cover"
+          priority
+          quality={90}
         />
-        <div className="absolute inset-0 bg-slate-900/70" />
+        <div className="absolute inset-0 bg-slate-900/50" />
       </div>
 
       {/* Hero Content - Optimized for both mobile and desktop */}
@@ -25,17 +29,17 @@ export function HeroSection() {
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mt-4 md:mt-6 max-w-5xl mx-auto mb-8 md:mb-10 px-2 leading-relaxed">
           <span className="block sm:inline">Disruptive AGE in Surgical Innovation:</span>
           <span className="block sm:inline mt-2 sm:mt-0 sm:ml-2">
-            <span className="text-[#1DA9C9]">Artificial Intelligence</span> ·
-            <span className="text-[#F9C600] ml-2">New-Generation Materials</span> ·
-            <span className="text-[#E43C7A] ml-2">Emerging Robotics</span>
+            <span className="text-[#F9C600]">Artificial Intelligence</span> ·
+            <span className="text-[#F28C28] ml-2">New-Generation Materials</span> ·
+            <span className="text-[#F9C600] ml-2">Emerging Robotics</span>
           </span>
         </p>
 
         {/* Date and location with mobile-optimized layout */}
         <div className="mt-6 md:mt-8 mb-8 md:mb-10">
           <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg px-6 py-4 md:px-8 md:py-6 border border-[#1DA9C9]/30">
-            <p className="text-xl md:text-2xl lg:text-3xl font-bold text-[#1DA9C9] mb-2">19 – 21 November 2026</p>
-            <p className="text-base md:text-lg lg:text-xl text-gray-300">Nürnberg, Germany</p>
+            <p className="text-xl md:text-2xl lg:text-3xl font-bold text-[#F9C600] mb-2">19 – 21 November 2026</p>
+            <p className="text-base md:text-lg lg:text-xl text-gray-200">Nürnberg, Germany</p>
           </div>
         </div>
 
@@ -55,7 +59,7 @@ export function HeroSection() {
             <Button
               variant="outline"
               size="lg"
-              className="border-[#1DA9C9]/50 text-[#1DA9C9] hover:bg-[#1DA9C9]/10 py-4 px-8 text-lg w-full sm:w-auto min-w-[200px] backdrop-blur-sm bg-transparent"
+              className="border-[#F9C600]/50 text-[#F9C600] hover:bg-[#F9C600]/10 py-4 px-8 text-lg w-full sm:w-auto min-w-[200px] backdrop-blur-sm bg-transparent"
             >
               Learn More
             </Button>
